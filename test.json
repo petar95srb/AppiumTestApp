@@ -1,0 +1,60 @@
+{
+  "config": {
+    "nodeBinaryPath": "C:\\Program Files\\nodejs\\node.exe",
+    "appiumBinaryPath": "C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\build\\lib\\main.js",
+    "androidSDKPath": "C:\\Program Files (x86)\\Android\\android-sdk"
+  },
+  "phoneConfig": {
+    "deviceName": "MVS4C19809000904",
+    "platformName": "Android",
+    "platformVersion": "9"
+  },
+  "appConfig": {
+    "appPackage": "com.android.calculator2",
+    "appActivity": ".Calculator"
+  },
+  "testData": [
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/op_clr",
+      "testType": "click"
+    },
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/digit_3",
+      "testType": "click"
+    },
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/op_mul",
+      "testType": "click"
+    },
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/digit_7",
+      "testType": "click"
+    },
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/op_mul",
+      "testType": "click"
+    },
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/digit_9",
+      "testType": "click"
+    },
+    {
+      "by": "id",
+      "elementName": "com.android.calculator2:id/eq",
+      "testType": "click"
+    } 
+  ],
+  "resaultConfig": {
+    "resaultType": "value",
+    "by": "id",
+    "elementName": "com.android.calculator2:id/formula",
+    "resaultValue": "123",
+    "screenShootAfterEveryStep": false
+  }
+}
