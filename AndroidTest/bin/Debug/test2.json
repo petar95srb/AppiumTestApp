@@ -1,0 +1,56 @@
+{
+  "config": {
+    "nodeBinaryPath": "C:\\Program Files\\nodejs\\node.exe",
+    "appiumBinaryPath": "C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\build\\lib\\main.js",
+    "androidSDKPath": "C:\\Program Files (x86)\\Android\\android-sdk"
+  },
+  "phoneConfig": {
+    "deviceName": "MVS4C19809000904",
+    "platformName": "Android",
+    "platformVersion": "9"
+  },
+  "appConfig": {
+    "appPackage": "com.android.chrome",
+    "appActivity": "com.google.android.apps.chrome.Main"
+  },
+  "testData": [
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView/android.view.View[4]/android.view.View/android.widget.EditText[1]",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[4]/android.view.View/android.widget.EditText[1]",
+      "testType": "input",
+      "inputValue": "Petar"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[4]/android.view.View",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[4]/android.view.View/android.widget.EditText[2]",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[4]/android.view.View/android.widget.EditText[2]",
+      "testType": "input",
+      "inputValue": "1234"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.webkit.WebView/android.view.View[4]/android.view.View/android.widget.EditText[2]",
+      "testType": "submit"
+    }
+  ],
+  "resaultConfig": {
+    "resaultType": "screenShot",
+    "by": "xpath",
+    "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout",
+    "screenShootAfterEveryStep": true
+  }
+}

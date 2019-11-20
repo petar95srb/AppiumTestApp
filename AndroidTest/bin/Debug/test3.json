@@ -1,0 +1,96 @@
+{
+  "config": {
+    "nodeBinaryPath": "C:\\Program Files\\nodejs\\node.exe",
+    "appiumBinaryPath": "C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\build\\lib\\main.js",
+    "androidSDKPath": "C:\\Program Files (x86)\\Android\\android-sdk"
+  },
+  "phoneConfig": {
+    "deviceName": "MVS4C19809000904",
+    "platformName": "Android",
+    "platformVersion": "9"
+  },
+  "appConfig": {
+    "appPackage": "si.petrol.mojpetrol",
+    "appActivity": ".MainActivity"
+  },
+  "testData": [
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText",
+      "testType": "input",
+      "inputValue": "petar21121995@gmail.com"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText",
+      "testType": "input",
+      "inputValue": "Petrol#12"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View/android.widget.Button",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.app.Dialog/android.view.View/android.widget.Button[1]",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.Button",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[1]/android.widget.ToggleButton[2]",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[1]/android.widget.ToggleButton[3]",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.widget.Button",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.widget.Button",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[3]/android.view.View[3]/android.widget.Button",
+      "testType": "click"
+    },
+    {
+      "by": "xpath",
+      "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.app.Dialog/android.view.View/android.widget.Button[2]",
+      "testType": "click"
+    }
+  ],
+  "resaultConfig": {
+    "resaultType": "screenShot",
+    "by": "xpath",
+    "elementName": "/hierarchy/android.widget.FrameLayout",
+    "screenShootAfterEveryStep": true
+  }
+}

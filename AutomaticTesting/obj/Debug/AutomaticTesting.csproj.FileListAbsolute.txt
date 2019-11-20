@@ -1,0 +1,17 @@
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.csprojAssemblyReference.cache
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\AutomaticTesting.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\AutomaticTesting.pdb
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\Appium.Net.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\Castle.Core.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\Newtonsoft.Json.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\SeleniumExtras.PageObjects.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\WebDriver.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\WebDriver.Support.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\Castle.Core.xml
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\Newtonsoft.Json.xml
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\WebDriver.xml
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\WebDriver.Support.xml
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.csproj.CopyComplete
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.dll
+C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.pdb
