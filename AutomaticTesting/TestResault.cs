@@ -32,7 +32,7 @@ namespace AutomaticTesting
 
         public TestResault(JObject config)
         {
-            string resaultType = (string)config["resaultType"];
+            string resaultType = (string)config["resultType"];
 
             _resaultType = TestResault.ParseResaultType(resaultType);
 
@@ -44,7 +44,7 @@ namespace AutomaticTesting
 
             if (_resaultType == ResaultType.VALUE)
             {
-                _value = (string)config["resaultValue"];
+                _value = (string)config["resultValue"];
             }
             else
             {

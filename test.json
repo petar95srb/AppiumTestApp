@@ -50,11 +50,11 @@
       "testType": "click"
     } 
   ],
-  "resaultConfig": {
-    "resaultType": "value",
+  "resultConfig": {
+    "resultType": "value",
     "by": "id",
     "elementName": "com.android.calculator2:id/formula",
-    "resaultValue": "123",
+    "resultValue": "123",
     "screenShootAfterEveryStep": false
   }
 }

@@ -47,8 +47,8 @@
       "testType": "submit"
     }
   ],
-  "resaultConfig": {
-    "resaultType": "screenShot",
+  "resultConfig": {
+    "resultType": "screenShot",
     "by": "xpath",
     "elementName": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout",
     "screenShootAfterEveryStep": true

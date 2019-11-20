@@ -27,9 +27,9 @@ json:
 			- elementName : id ili xpath trazenog elementa.
 			- testType : akcija koja treba da se izvrsi nad elementom (click, input, ...).
 			- inputValue : vrednos koja se unosi
-	- resaultConfig : konfiguracija resaultata:
-		- resaultType : tip izlaznog rezultata (value, screanShoot).
+	- resultConfig : konfiguracija resaultata:
+		- resultType : tip izlaznog rezultata (value, screanShoot).
 		- by : preko cega se element trazi (id, xpath, ...).
 		- elementName : id ili xpath trazenog elementa.
-		- resaultValue : resultat koji ocekujemo.
+		- resultValue : resultat koji ocekujemo.
 		- screenShootEveryStep : dali nakon svakog koraka treba screenshoot.
