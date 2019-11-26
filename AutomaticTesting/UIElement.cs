@@ -14,7 +14,15 @@ namespace AutomaticTesting
         {
             get
             {
-                return TestAppMain.Instance.Connector.Driver.FindElement(_getElementBy);
+                try 
+                {
+                    return TestAppMain.Instance.Connector.Driver.FindElement(_getElementBy);
+                }
+                catch (Exception e)
+                {
+                    ErrorHandler.UiElementMissingError(e.Message);
+                }
+                return null;
             }
         }
 
@@ -32,7 +40,7 @@ namespace AutomaticTesting
 
             }catch(Exception e)
             {
-
+                ErrorHandler.UiElementMissingError(name);
             }
 
             return uIElement;

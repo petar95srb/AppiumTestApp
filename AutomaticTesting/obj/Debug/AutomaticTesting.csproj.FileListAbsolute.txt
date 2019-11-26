@@ -15,3 +15,6 @@ C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\bin\Debug\WebDriver.Sup
 C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.csproj.CopyComplete
 C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.dll
 C:\Users\petar\source\repos\AndroidTest\AutomaticTesting\obj\Debug\AutomaticTesting.pdb
+C:\Users\petar\source\repos\AppiumTestApp\AutomaticTesting\obj\Debug\AutomaticTesting.csprojAssemblyReference.cache
+C:\Users\petar\source\repos\AppiumTestApp\AutomaticTesting\obj\Debug\AutomaticTesting.dll
+C:\Users\petar\source\repos\AppiumTestApp\AutomaticTesting\obj\Debug\AutomaticTesting.pdb

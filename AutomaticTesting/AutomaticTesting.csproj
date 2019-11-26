@@ -62,10 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfig.cs" />
+    <Compile Include="ClickTestStep.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Connector.cs" />
+    <Compile Include="ErrorHandler.cs" />
+    <Compile Include="InputTestStep.cs" />
+    <Compile Include="ITestStep.cs" />
     <Compile Include="PhoneConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitTestStep.cs" />
+    <Compile Include="SwipeTestStep.cs" />
+    <Compile Include="TapTestStep.cs" />
     <Compile Include="Test.cs" />
     <Compile Include="TestAppMain.cs" />
     <Compile Include="TestResault.cs" />

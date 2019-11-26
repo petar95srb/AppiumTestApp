@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 
 namespace AutomaticTesting
 {
-    public enum TestStepType
-    {
-        CLICK,
-        INPUT,
-        SUBMIT
-    }
 
     public class TestStep
     {
         private UIElement _uIElement;
         private TestStepType _testStepType;
         private string _inputValue;
+
+        private Vector2 _touchCordinates;
 
         public TestStep(JObject step)
         {

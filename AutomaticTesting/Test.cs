@@ -9,15 +9,15 @@ namespace AutomaticTesting
 {
     public class Test
     {
-        private List<TestStep> _testSteps;
+        private List<ITestStep> _testSteps;
 
         public Test(JArray steps)
         {
-            _testSteps = new List<TestStep>();
+            _testSteps = new List<ITestStep>();
 
             for (int i = 0; i < steps.Count; i++)
             {
-                _testSteps.Add(new TestStep((JObject)steps[i]));
+                _testSteps.Add(ITestStep.CreateTestStep((JObject)steps[i]));
             }
         }
 
@@ -26,7 +26,7 @@ namespace AutomaticTesting
         {
             for (int i = 0; i < _testSteps.Count; i++)
             {
-                _testSteps[i].StartTestStep();
+                _testSteps[i].PerformStep();
                 if (TestAppMain.Instance.TestResault.ScreenShooAfterEveryStep)
                     TestAppMain.Instance.TestResault.ScreenShot("Step" + i.ToString() + ".png");
             }
