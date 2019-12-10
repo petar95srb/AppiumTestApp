@@ -34,5 +34,20 @@ namespace AutomaticTesting
             touch.Release();
             touch.Perform();
         }
+
+        public override JObject GetTestData()
+        {
+            JObject data = new JObject();
+
+            data["stepName"] = StepName;
+            data["testType"] = "swipe";
+            data["xSwipeStart"] = _swipeStartCordinates.X;
+            data["ySwipeStart"] = _swipeStartCordinates.Y;
+
+            data["xSwipeStop"] = _swipeStopCordinates.X;
+            data["ySwipeStop"] = _swipeStopCordinates.Y;
+
+            return data;
+        }
     }
 }

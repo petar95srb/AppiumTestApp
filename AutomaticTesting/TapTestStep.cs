@@ -24,6 +24,19 @@ namespace AutomaticTesting
         {
             TouchAction touch = new TouchAction(TestAppMain.Instance.Connector.Driver);
             touch.Tap(_tapCordinates.X, _tapCordinates.Y);
+            touch.Perform();
+        }
+
+        public override JObject GetTestData()
+        {
+            JObject data = new JObject();
+
+            data["stepName"] = StepName;
+            data["testType"] = "tap";
+            data["xtap"] = _tapCordinates.X;
+            data["xtap"] = _tapCordinates.Y;
+
+            return data;
         }
     }
 }

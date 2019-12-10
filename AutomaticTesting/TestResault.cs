@@ -14,9 +14,20 @@ namespace AutomaticTesting
     }
     public class TestResault
     {
+        private JObject _config;
+        public JObject Config
+        {
+            get
+            {
+                return _config;
+            }
+        }
+
         private ResaultType _resaultType;
 
         private UIElement _uIElement;
+        private string _by;
+        private string _name;
         private string _value;
 
         private string _screenShotFileName;
@@ -38,6 +49,10 @@ namespace AutomaticTesting
 
             string getElementBy = (string)config["by"];
             string getElementByValue = (string)config["elementName"];
+
+            _by = getElementBy;
+            _name = getElementByValue;
+
             _screenShooAfterEveryStep = (bool)config["screenShootAfterEveryStep"];
 
             _uIElement = UIElement.GetElement(getElementByValue, UIElement.ParseFindElementBy(getElementBy, getElementByValue));

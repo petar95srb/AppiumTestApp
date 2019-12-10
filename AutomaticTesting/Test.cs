@@ -10,6 +10,18 @@ namespace AutomaticTesting
     public class Test
     {
         private List<ITestStep> _testSteps;
+        public List<ITestStep> TestSteps
+        {
+            get
+            {
+                return _testSteps;
+            }
+        }
+
+        public Test()
+        {
+            _testSteps = new List<ITestStep>();
+        }
 
         public Test(JArray steps)
         {
@@ -31,5 +43,7 @@ namespace AutomaticTesting
                     TestAppMain.Instance.TestResault.ScreenShot("Step" + i.ToString() + ".png");
             }
         }
+
+        
     }
 }

@@ -1,7 +1,7 @@
 {
   "config": {
     "nodeBinaryPath": "C:\\Program Files\\nodejs\\node.exe",
-    "appiumBinaryPath": "C:\\Program Files\\Appium\\resources\\app\\node_modules\\appium\\build\\lib\\main.js",
+    "appiumBinaryPath": "C:\Users\petar\AppData\Local\Programs\Appium\resources\app\node_modules\appium\build\lib\\main.js",
     "androidSDKPath": "C:\\Program Files (x86)\\Android\\android-sdk"
   },
   "phoneConfig": {

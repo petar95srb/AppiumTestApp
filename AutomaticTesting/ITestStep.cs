@@ -61,6 +61,17 @@ namespace AutomaticTesting
             }
         }
 
+        private string _stepName;
+        public string StepName
+        {
+            get
+            {
+                return _stepName;
+            }
+        }
+
+        public abstract JObject GetTestData();
+
         public static ITestStep CreateTestStep(JObject step)
         {
             string testType = (string)step["testType"];
@@ -75,18 +86,23 @@ namespace AutomaticTesting
                     testStep = new ClickTestStep(step);
                     break;
                 case TestStepType.INPUT:
+                    testStep = new InputTestStep(step);
                     break;
                 case TestStepType.SUBMIT:
+                    testStep = new SubmitTestStep(step);
                     break;
                 case TestStepType.TAP:
+                    testStep = new TapTestStep(step);
                     break;
                 case TestStepType.SWIPE:
+                    testStep = new SwipeTestStep(step);
                     break;
                 default:
                     break;
             }
 
             testStep._testStepType = type;
+            testStep._stepName = (string)step["stepName"];
 
             return testStep;
 
@@ -109,6 +125,11 @@ namespace AutomaticTesting
                 default:
                     throw new Exception("teststep type is not correct");
             }
+        }
+
+        public override string ToString()
+        {
+            return _stepName;
         }
     }
 }

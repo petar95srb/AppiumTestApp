@@ -27,7 +27,6 @@ namespace AutomaticTesting
         }
 
         private By _getElementBy;
-
         public static UIElement GetElement(string name, By by)
         {
             UIElement uIElement = null;

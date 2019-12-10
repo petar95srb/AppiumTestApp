@@ -27,7 +27,7 @@ namespace AutomaticTesting
         private string _appiumBinaryPath;
         private string _androidSdkPath;
 
-        private Config()
+        public Config()
         {
             _nodeBinaryPath = @"C:\Program Files\nodejs\node.exe";
             _appiumBinaryPath = @"C:\Program Files\Appium\resources\app\node_modules\appium\build\lib\main.js";
@@ -41,6 +41,15 @@ namespace AutomaticTesting
             _nodeBinaryPath = (string)config["nodeBinaryPath"];
             _appiumBinaryPath = (string)config["appiumBinaryPath"];
             _androidSdkPath = (string)config["androidSDKPath"];
+
+            UpdateEnvironmentVariable();
+        }
+
+        public void SetConfig(Config config)
+        {
+            _nodeBinaryPath = config._nodeBinaryPath;
+            _appiumBinaryPath = config._appiumBinaryPath;
+            _androidSdkPath = config._androidSdkPath;
 
             UpdateEnvironmentVariable();
         }

@@ -34,8 +34,8 @@ namespace AutomaticTesting
             appiumOptions.AddAdditionalCapability(MobileCapabilityType.PlatformVersion, phoneConfig.PlatformVersion);
 
             _driver = new AndroidDriver<AppiumWebElement>(_appiumLocalService, appiumOptions);
-
-            _driver.StartActivity(appConfig.AppPackage, appConfig.AppActivity);
+            if(appConfig != null)
+                _driver.StartActivity(appConfig.AppPackage, appConfig.AppActivity);
         }
     }
 }

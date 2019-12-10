@@ -98,5 +98,46 @@ namespace AutomaticTesting
             return _testResault.CheckResault();
         }
 
+        public bool InitTest(Config config, PhoneConfig phoneConfig, AppConfig appConfig,TestResault testResault)
+        {
+            Config.Instance.SetConfig(config);
+            _phoneConfig = phoneConfig;
+            _appConfig = appConfig;
+            _testResault = testResault;
+
+            try
+            {
+                _connector = new Connector(_phoneConfig, _appConfig);
+                _test = new Test();
+            }catch(Exception e)
+            {
+                _connector = null;
+                _test = null;
+                return false;
+            }
+
+            return true;
+        }
+
+        public void AddTestStep(JObject step)
+        {
+            Test.TestSteps.Add(ITestStep.CreateTestStep(step));
+        }
+
+        public void AddTestStep(ITestStep step)
+        {
+            Test.TestSteps.Add(step);
+        }
+
+        public void RemoveTestStep(int index)
+        {
+            Test.TestSteps.RemoveAt(index);
+        }
+
+        public void ExecuteTestStep(int index)
+        {
+            Test.TestSteps[index].PerformStep();
+        }
+
     }
 }
