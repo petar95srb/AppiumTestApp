@@ -119,6 +119,11 @@ namespace AutomaticTesting
             return true;
         }
 
+        public void RunTest()
+        {
+            Test.startTest();
+        }
+
         public void AddTestStep(JObject step)
         {
             Test.TestSteps.Add(ITestStep.CreateTestStep(step));
@@ -137,6 +142,19 @@ namespace AutomaticTesting
         public void ExecuteTestStep(int index)
         {
             Test.TestSteps[index].PerformStep();
+        }
+
+        public JObject GetAsJson()
+        {
+            JObject data = new JObject();
+
+            data["config"] = Config.Instance.GetAsJson();
+            data["phoneConfig"] = _phoneConfig.GetAsJson();
+            data["appConfig"] = _appConfig.GetAsJson();
+            data["testData"] = Test.GetAsJson();
+            data["resaultConfig"] = TestResault.GetAsJson();
+
+            return data;
         }
 
     }

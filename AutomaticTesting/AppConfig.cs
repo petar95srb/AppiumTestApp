@@ -45,5 +45,14 @@ namespace AutomaticTesting
         {
           
         }
+
+        public JObject GetAsJson()
+        {
+            JObject data = new JObject();
+            data["appPackage"] = _appPackage;
+            data["appActivity"] = _appActivity;
+
+            return data;
+        }
     }
 }

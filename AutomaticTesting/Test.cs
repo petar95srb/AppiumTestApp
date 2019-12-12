@@ -44,6 +44,17 @@ namespace AutomaticTesting
             }
         }
 
+        public JArray GetAsJson()
+        {
+            JArray steps = new JArray();
+
+            for(int i=0;i<_testSteps.Count;i++)
+            {
+                steps.Add(_testSteps[i].GetTestData());
+            }
+
+            return steps;
+        }
         
     }
 }

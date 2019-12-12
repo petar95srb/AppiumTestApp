@@ -50,5 +50,15 @@ namespace AutomaticTesting
             _platformName = (string)config["platformName"];
             _platformVersion = (string)config["platformVersion"];
         }
+
+        public JObject GetAsJson()
+        {
+            JObject data = new JObject();
+            data["deviceName"] = _deviceName;
+            data["platformName"] = _platformName;
+            data["platformVersion"] = _platformVersion;
+
+            return data;
+        }
     }
 }

@@ -111,5 +111,15 @@ namespace AutomaticTesting
                 }
             }
         }
+
+        public JObject GetAsJson()
+        {
+            JObject data = new JObject();
+            data["nodeBinaryPath"] = _nodeBinaryPath;
+            data["appiumBinaryPath"] = _appiumBinaryPath;
+            data["androidSDKPath"] = _androidSdkPath;
+
+            return data;
+        }
     }
 }

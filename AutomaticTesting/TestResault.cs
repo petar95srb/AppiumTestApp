@@ -43,7 +43,7 @@ namespace AutomaticTesting
 
         public TestResault(JObject config)
         {
-            string resaultType = (string)config["resultType"];
+            string resaultType = (string)config["resaultType"];
 
             _resaultType = TestResault.ParseResaultType(resaultType);
 
@@ -96,6 +96,20 @@ namespace AutomaticTesting
         public void ScreenShot(string fileName)
         {
             _uIElement.Element.GetScreenshot().SaveAsFile(fileName);
+        }
+
+        public JObject GetAsJson()
+        {
+            JObject data = new JObject();
+            data["resaultType"] = _resaultType == ResaultType.SCREENSHOT? "screenShot" : "value";
+            data["by"] = _by;
+            data["elementName"] = _name;
+            data["screenShootAfterEveryStep"] = _screenShooAfterEveryStep;
+
+            if(_resaultType == ResaultType.VALUE)
+                data["resultValue"] = _value;
+
+            return data;
         }
     }
 }
