@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidTest", "AndroidTest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomaticTesting", "AutomaticTesting\AutomaticTesting.csproj", "{63229CC3-9CE1-4638-86C9-58C879896158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidTestAppGUI", "..\AndroidTestAppGUI\AndroidTestAppGUI\AndroidTestAppGUI.csproj", "{DA298F7A-983D-42E4-AC03-3B7C2D8FC8F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidTestAppGUI", "AndroidTestAppGUI\AndroidTestAppGUI\AndroidTestAppGUI.csproj", "{DA298F7A-983D-42E4-AC03-3B7C2D8FC8F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
